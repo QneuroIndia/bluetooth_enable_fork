@@ -29,6 +29,12 @@ class BluetoothEnable {
     return bluetoothState;
   }
 
+  static Future<String> get disableBluetooth async {
+    final String bluetoothState =
+        await _channel.invokeMethod('disableBluetooth');
+    return bluetoothState;
+  }
+
   /// This method activates Bluetooth just like enableBluetooth, but allows you
   /// to customize the request dialog.
   static Future<String> customBluetoothRequest(
