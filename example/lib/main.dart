@@ -1,3 +1,4 @@
+import 'package:bluetooth_enable_example/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:bluetooth_enable_fork/bluetooth_enable_fork.dart';
 
@@ -8,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Test",
-      home: _MyAppState(),
+      home: HomePage(),
     );
   }
 }
